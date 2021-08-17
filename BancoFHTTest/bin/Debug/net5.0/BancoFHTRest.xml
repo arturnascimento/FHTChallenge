@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>BancoFHTRest</name>
+    </assembly>
+    <members>
+        <member name="M:BancoFHTRest.Controllers.BancoFHTController.Criar(System.Int32,System.Decimal)">
+            <summary>
+            Endpoint responsável pela criação de contas, você deve informar o número da conta e o saldo inicial. Retorna um Json contendo Id, Conta e Saldo.
+            </summary>
+            <param name="contaModel"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BancoFHTRest.Controllers.BancoFHTController.Buscar(System.Int32)">
+            <summary>
+            Endpoint responsável por retorna o saldo de uma conta salva no banco de dados. Deve-se informar o número da conta para conseguir o saldo.
+            </summary>
+            <param name="Conta"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BancoFHTRest.Controllers.BancoFHTController.Sacar(System.Int32,System.Decimal)">
+            <summary>
+            Endpoint responsável pelo saque em conta, você deverá informar o número da conta e o valor do saque. Retorna o saldo atualizado.
+            </summary>
+            <param name="Conta"></param>
+            <param name="Valor"></param>
+            <returns></returns>
+        </member>
+        <member name="M:BancoFHTRest.Controllers.BancoFHTController.Depositar(System.Int32,System.Decimal)">
+            <summary>
+            Endpoint responsável por depositar dinheiro em conta, você deverá informa a conta e o valor para concluir o depósito. Retorna o saldo atualizado.
+            </summary>
+            <param name="Conta"></param>
+            <param name="Valor"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
